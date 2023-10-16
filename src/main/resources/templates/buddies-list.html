@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Buddies List</title>
+</head>
+<body>
+<p th:each="buddy : ${buddies}">
+  id: <b><span th:text="${buddy.id}"/></b>
+  Name: <b><span th:text="${buddy.name}"/></b>
+  Phone Number: <b><span th:text="${buddy.number}"/></b>
+</p>
+</body>
+</html>
